@@ -82,7 +82,7 @@ function Read-ValidatedName {
 
     while ($true) {
         $value = (Read-Host $Prompt).Trim()
-        # Letters plus spaces, hyphens, and apostrophes (e.g. Mary-Jane, O'Brien)
+        # Letters plus spaces, hyphens, and apostrophes (e.g. Jolly Crew)
         if ($value -match "^[A-Za-z][A-Za-z '\-]*$") {
             return $value
         }
